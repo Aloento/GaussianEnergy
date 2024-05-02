@@ -1,6 +1,7 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
 import React from "react";
+import "./db";
 import "./globals.css";
 
 function RootLayout({ children }: React.PropsWithChildren) {
