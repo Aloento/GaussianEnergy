@@ -2,7 +2,7 @@ import { Button } from "antd";
 
 function Home() {
   return (
-    <div className="App">
+    <div className="flex">
       <Button type="primary">Button</Button>
     </div>
   );
