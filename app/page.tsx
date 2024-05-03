@@ -11,7 +11,7 @@ function Home() {
       <Divider className="!m-0" />
 
       <div className="flex">
-        <Dragger action="/api" accept=".log">
+        <Dragger action="/api" accept=".log" maxCount={1} className="h-fit">
           <p className="ant-upload-drag-icon">
             <InboxOutlined />
           </p>
