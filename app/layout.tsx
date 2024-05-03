@@ -7,13 +7,17 @@ import "./globals.css";
 function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
-      <body>
-        <AntdRegistry>
-          <ConfigProvider theme={{ cssVar: true, hashed: false }}>
+      <head>
+        <title>Gaussian Energy</title>
+      </head>
+
+      <AntdRegistry>
+        <ConfigProvider theme={{ cssVar: true, hashed: false }}>
+          <body className="flex items-center justify-center h-screen bg-slate-200">
             {children}
-          </ConfigProvider>
-        </AntdRegistry>
-      </body>
+          </body>
+        </ConfigProvider>
+      </AntdRegistry>
     </html>
   );
 }
